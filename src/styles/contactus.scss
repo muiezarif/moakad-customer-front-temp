@@ -1,0 +1,235 @@
+.contactus {
+    padding-top: 24px;
+    min-height: 100vh;
+    padding-bottom: 16px;
+
+    .contacttop {
+        border-radius: 32px;
+        background: var(--Base-White, #FFF);
+        padding: 48px;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 16px;
+
+        .contactexts {
+            max-width: 878px;
+
+            .contacthead {
+                color: var(--Base-Text, #12215C);
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 48px;
+                margin-bottom: 32px;
+            }
+
+            .contactpara {
+                color: var(--Grey-700, #7A7A96);
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+            }
+        }
+
+        .contactimglogo {
+            width: 392.043px;
+            height: 483.998px;
+            position: absolute;
+            right: -73px;
+            top: -42px;
+        }
+    }
+
+    .contactbottom {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+
+        .contactqr {
+            height: 642.802px;
+            max-width: 455px;
+            width: 100%;
+            border-radius: 30px;
+        }
+
+        .contactright {
+            padding: 48px;
+            border-radius: 32px;
+            background: var(--White-200, #E8EDFC);
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            width: 100%;
+            height: 642.802px;
+
+            .nameinput {
+                position: relative;
+
+                .rightconnectinput {
+                    border-radius: 100px;
+                    background: var(--Base-White, #FFF);
+                    padding: 16px 24px;
+                    color: #000;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    outline: none;
+                    border: none;
+                    width: 100%;
+                    padding-left: 58px;
+
+                    &::placeholder {
+                        color: var(--Grey-700, #7A7A96);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+
+                .nameimg {
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    top: 14px;
+                    left: 24px;
+                }
+            }
+
+            .numberinput {
+                position: relative;
+
+                .rightconnectinput {
+                    border-radius: 100px;
+                    background: var(--Base-White, #FFF);
+                    padding: 16px 24px;
+                    color: #000;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    outline: none;
+                    border: none;
+                    width: 100%;
+                    padding-left: 73px;
+
+                    &::placeholder {
+                        color: var(--Grey-700, #7A7A96);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+
+                .flagimg {
+                    width: 39px;
+                    height: 24px;
+                    position: absolute;
+                    top: 14px;
+                    left: 24px;
+                    z-index: 9;
+                }
+            }
+
+            .rightconnecttextarea {
+                border-radius: 24px;
+                background: var(--Base-White, #FFF);
+                padding: 16px;
+                color: #000;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                height: 229px;
+                outline: none;
+                border: none;
+
+                &::placeholder {
+                    color: var(--Grey-700, #7A7A96);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+
+            .rightbottompara {
+                color: var(--Grey-900, #595970);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px;
+                max-width: 489px;
+            }
+
+            .bluebtn {
+                color: var(--Base-White, #FFF);
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px;
+                border-radius: 57px;
+                background: var(--Blue-Base, #2652FF);
+                display: flex;
+                padding: 16px 48px;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                outline: none;
+                max-width: fit-content;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    .contactus {
+        padding-top: 32px;
+    }
+
+    .contactus .contacttop {
+        padding: 24px;
+    }
+
+    .contactus .contactbottom {
+        flex-direction: column;
+    }
+
+    .contactus .contacttop .contactexts .contacthead {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .contactus .contacttop .contactexts .contactpara {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .contactus .contacttop .contactimglogo {
+        width: 129.478px;
+        height: 159.84px;
+        left: 239px;
+        top: 0px;
+    }
+
+    .contactus .contactbottom .contactqr {
+        height: unset;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contactus .contactbottom .contactright {
+        padding: 24px;
+        height: unset;
+    }
+
+    .contactus .contactbottom .contactright .bluebtn {
+        padding: 12px 32px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}

@@ -1,0 +1,142 @@
+.doctorslist {
+    .parent-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(437px, 1fr));
+        gap: 16px;
+
+        .single-card {
+            border-radius: 32px;
+            background: #E0E0E8;
+            position: relative;
+            z-index: 9;
+            padding: 20px 16px 16px 16px;
+            height: 474px;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+
+            .card-bg-logo {
+                position: absolute;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+                z-index: -1;
+            }
+
+            .card-link {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
+
+            .bg-img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .doctor-profile {
+                border-radius: 24px;
+                background: var(--Base-White, #FFF);
+                padding: 16px 24px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+
+                .inner-text {
+                    h6 {
+                        color: var(--Base-Text, #12215C);
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 32px;
+                        margin-bottom: 8px;
+                    }
+
+                    p {
+                        color: var(--Grey-600, #8F8FA6);
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-twice {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+        border-radius: 32px;
+        background: #FFF;
+        padding: 24px 48px;
+
+        .left-buttons {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 14px;
+
+            .prev-btn {
+                border: none;
+                background-color: transparent;
+                padding: 0;
+            }
+
+            .opacityset {
+                opacity: 0.5;
+            }
+
+            .next-btn {
+                border: none;
+                background-color: transparent;
+                padding: 0;
+            }
+        }
+
+        .btn-appointment {
+            border-radius: 57px;
+            background: var(--Blue-Base, #2652FF);
+            padding: 16px 24px;
+            border: none;
+            color: var(--Base-White, #FFF);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px;
+        }
+    }
+}
+
+
+
+@media (max-width:1024px){
+    .doctorslist .parent-cards{
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    }
+    .doctorslist .parent-cards .single-card{
+        height: 400px;
+    }
+}
+
+@media (max-width:600px){
+    .doctorslist .parent-cards{
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+}

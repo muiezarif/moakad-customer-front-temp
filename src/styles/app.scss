@@ -1,0 +1,159 @@
+@import url(https://db.onlinewebfonts.com/c/17241fb9c2ffb3ec11eba762e771435f?family=Suisse+Int%27l+Book);
+@font-face {
+  font-family: "Suisse Int'l Book";
+  src: url("https://db.onlinewebfonts.com/t/17241fb9c2ffb3ec11eba762e771435f.eot");
+  src: url("https://db.onlinewebfonts.com/t/17241fb9c2ffb3ec11eba762e771435f.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/17241fb9c2ffb3ec11eba762e771435f.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/17241fb9c2ffb3ec11eba762e771435f.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/17241fb9c2ffb3ec11eba762e771435f.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/17241fb9c2ffb3ec11eba762e771435f.svg#Suisse Int'l Book")format("svg");
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  border-radius: 40px;
+  background: var(--Grey-100, #F5F5F7);
+  font-family: "Suisse Int'l Book";
+  padding: 48px 0px;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p0 {
+  padding: 0px;
+}
+
+// All transitions
+div,
+ul,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+button {
+  -webkit-transition: background-color 0.7s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+textarea {
+  resize: none;
+  height: 60px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0;
+}
+
+iframe {
+  position: unset !important;
+  top: 0px !important;
+  left: 0px !important;
+  width: 0px !important;
+  height: 0px !important;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+.form-control:focus {
+  box-shadow: unset;
+}
+
+a {
+  cursor: pointer;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea:focus-visible {
+  outline: none !important;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea:focus {
+  outline: none !important;
+}
+
+button.close {
+  opacity: 1;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-clear-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+.dropdown-menu {
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
+}
+
+.dropdown-menu.show {
+  opacity: 1 !important;
+}
+
+.custom-container {
+  max-width: 1377px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (max-width:600px){
+  body{
+    padding: 24px 0px;
+  }
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    -webkit-appearance: none;
+    opacity: 0;
+}

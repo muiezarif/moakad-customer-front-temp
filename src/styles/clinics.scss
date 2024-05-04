@@ -1,0 +1,173 @@
+.clinicsmain {
+    min-height: 100vh;
+    padding-top: 24px;
+
+    .topclinic {
+        border-radius: 32px;
+        background: var(--Base-White, #FFF);
+        padding: 48px;
+        margin-bottom: 16px;
+
+        .ourclinics {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+
+            .clinichead {
+                color: var(--Base-Text, #12215C);
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 48px;
+            }
+
+            .filterbtn {
+                display: flex;
+                padding: 8px 16px;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                color: var(--Blue-400, #0024B2);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                border-radius: 50px;
+                border: 1px solid var(--Blue-400, #0024B2);
+                background: transparent;
+            }
+        }
+
+        .ourclinicspara {
+            color: var(--Grey-700, #7A7A96);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
+
+    .clinicscardmain {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px;
+        margin-bottom: 16px;
+
+        .cliniccard {
+            border-radius: 32px;
+            background: var(--Base-White, #FFF);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 24px;
+
+            .cliniccardimg {
+                width: 200px;
+                height: 200px;
+                border-radius: 200px;
+                object-fit: cover;
+                object-position: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 24px;
+
+                .innerclinicimg {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 200px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            .cliniccardhead {
+                color: var(--Base-Text, #12215C);
+                text-align: center;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 32px;
+                margin-bottom: 8px;
+            }
+
+            .clinicbluepara {
+                color: var(--Blue-300, #002EE5);
+                text-align: center;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+                margin-bottom: 16px;
+            }
+
+            .raitingmain {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+
+                .raitingstars {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .raitingpara {
+                    color: var(--Base-Text, #12215C);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .clinicsmain .clinicscardmain {
+        grid-template-columns: 1fr;
+    }
+
+    .clinicsmain .topclinic {
+        padding: 24px;
+    }
+
+    .clinicsmain .topclinic .ourclinics .filterbtn {
+        padding: 6px 12px;
+
+        span {
+            display: none;
+        }
+    }
+
+    .clinicsmain .topclinic .ourclinics .clinichead {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .clinicsmain .topclinic .ourclinicspara {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .clinicsmain .clinicscardmain .cliniccard .cliniccardimg {
+        width: 120px;
+        height: 120px;
+    }
+
+    .clinicsmain .clinicscardmain .cliniccard .cliniccardhead {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .clinicsmain .clinicscardmain .cliniccard .clinicbluepara {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .clinicsmain{
+        padding-top: 32px;
+    }
+}

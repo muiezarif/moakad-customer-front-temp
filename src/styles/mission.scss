@@ -1,0 +1,143 @@
+.mainmission {
+    padding-bottom: 16px;
+    .innermission {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+
+        .missioncardright {
+            border-radius: 32px;
+            height: 268px;
+            padding: 40px 37px 52px 32px;
+            background: #FFF;
+
+            .missioncardrighthead {
+                color: var(--Base-Text, #12215C);
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 32px;
+                margin-bottom: 24px;
+            }
+
+            .missioncardrightpara {
+                color: var(--Base-Text, #12215C);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 24px;
+            }
+        }
+
+        .missioncardleft {
+            border-radius: 32px;
+            background: var(--Blue-400, #0024B2);
+            max-width: 437px;
+            width: 100%;
+            height: 268px;
+            padding: 40px 0px 0px 32px;
+            position: relative;
+
+            .missioncardleftlogo {
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+            }
+
+            .missioncardlefthead {
+                color: #FFF;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 58px;
+                margin-bottom: 16px;
+            }
+
+            .missioncardleftpara {
+                color: var(--Grey-300, #CCCCD6);
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
+                max-width: 220px;
+                width: 100%;
+
+                .boldpara {
+                    color: #FFF;
+                    font-weight: 500;
+                }
+            }
+
+            .missioncardleftimages {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                position: relative;
+                width: 144px;
+                margin-top: 16px;
+                height: 48px;
+
+                .imgone {
+                    position: absolute;
+                    left: 0px;
+                }
+
+                .imgtwo {
+                    position: absolute;
+                    left: 30px;
+                }
+
+                .imgthree {
+                    position: absolute;
+                    left: 60px;
+                }
+
+                .imgfour {
+                    position: absolute;
+                    left: 90px;
+                }
+
+                .missioncardimg {
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 58px;
+                    object-fit: cover;
+                    object-position: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .innercardimg {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 58px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px){
+    .mainmission .innermission{
+        flex-direction: column;
+    }
+    .mainmission .innermission .missioncardleft{
+        max-width: 100%;
+    }
+    .mainmission .innermission .missioncardright{
+        height: 100%;
+        padding: 24px;
+    }
+    .mainmission .innermission .missioncardright .missioncardrightpara{
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+    .mainmission .innermission .missioncardleft .missioncardlefthead{
+        font-size: 40px;
+    }
+}

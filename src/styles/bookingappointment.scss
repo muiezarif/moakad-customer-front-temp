@@ -1,0 +1,254 @@
+.bookingappointment {
+    padding-top: 48px;
+    padding-bottom: 16px;
+    min-height: 100vh;
+
+    .main-heading {
+        border-radius: 32px;
+        background: var(--Base-White, #FFF);
+        padding: 48px;
+        position: relative;
+        z-index: 9;
+        height: 236px;
+        width: 100%;
+        overflow: hidden;
+
+        .booking-bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        h6 {
+            color: var(--Base-Text, #12215C);
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 48px;
+            margin-bottom: 32px;
+        }
+
+        p {
+            color: var(--Grey-700, #7A7A96);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            max-width: 878px;
+            width: 100%;
+        }
+
+    }
+
+    .filter-area {
+        border-radius: 32px;
+        background: #FFF;
+        padding: 24px 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+        margin: 16px 0;
+
+        .left-side {
+            max-width: 1094px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 24px;
+
+            .single-drop {
+                border-radius: 50px;
+                border: 1px solid var(--Grey-100, #F5F5F7);
+                background: var(--Gray-50, #F9FAFB);
+                padding-left: 24px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+
+                .text {
+                    h6 {
+                        color: var(--Grey-700, #7A7A96);
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px;
+                    }
+                }
+
+                .dropdown {
+                    .dropdown-toggle {
+                        border-radius: 50px;
+                        border: 1px solid var(--Grey-100, #F5F5F7);
+                        background: var(--Base-White, #FFF);
+                        padding: 10px 24px;
+                        color: var(--Base-Text, #12215C);
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 26px;
+                        gap: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &::after {
+                            display: none;
+                        }
+                    }
+
+                    .dropdown-menu {
+                        border-radius: 20px;
+                        border: 1px solid var(--Grey-100, #F5F5F7);
+                        background: var(--Base-White, #FFF);
+                        width: 100%;
+
+                        a {
+                            padding: 10px 24px;
+                            color: var(--Base-Text, #12215C);
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 26px;
+                        }
+                    }
+                }
+
+                .option-field {
+                    position: relative;
+
+                    input {
+                        border-radius: 50px;
+                        border: 1px solid var(--Grey-100, #F5F5F7);
+                        background: var(--Base-White, #FFF);
+                        padding: 10px 24px;
+                        color: var(--Base-Text, #12215C);
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 26px;
+                    }
+
+                    .calendar-icon {
+                        position: absolute;
+                        top: 49%;
+                        right: 22px;
+                        transform: translate(0%, -50%);
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+
+        .apply-btn {
+            flex: 1;
+
+            a {
+                border-radius: 6px;
+                background: var(--Blue-Base, #2652FF);
+                box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 3px 0px rgba(0, 0, 0, 0.10);
+                padding: 17px 41px;
+                color: var(--white, #FFF);
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column; 
+    transition: transform 0.5s ease; /* Smooth transition for card container */
+  }
+  
+  .carousel-card {
+    margin-bottom: 10px;
+    opacity: 0; /* Initially hide cards */
+    transition: opacity 0.5s ease; /* Smooth transition for card opacity */
+  }
+
+  .our-specialists{
+    .main-heading{
+        margin-bottom: 16px !important;
+        .twice-parent{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+            h6{
+                margin-bottom: 0 !important;
+            }
+            .btn-filter{
+                padding: 8px 16px;
+                border-radius: 50px;
+                border: 1px solid var(--Blue-400, #0024B2);
+                color: var(--Blue-400, #0024B2);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+        p{
+            max-width: 100% !important;
+        }
+    }
+  }
+
+
+  @media (max-width:1024px){
+    .bookingappointment{
+        padding-top: 32px;
+    }
+    .bookingappointment .filter-area{
+        flex-direction: column;
+        padding: 24px;
+    }
+    .bookingappointment .filter-area .left-side{
+        flex-direction: column;
+    }
+    .bookingappointment .main-heading{
+        padding: 24px;
+        height: auto;
+    }
+    .bookingappointment .main-heading h6{
+        font-size: 24px;
+    }
+    .bookingappointment .main-heading p{
+        font-size: 16px;
+    }
+    .bookingappointment .filter-area .left-side .single-drop .text h6{
+        font-size: 14px;
+    }
+    .bookingappointment .filter-area .left-side .single-drop .dropdown .dropdown-toggle{
+        font-size: 18px;
+    }
+    .bookingappointment .filter-area .left-side .single-drop .option-field input{
+        font-size: 18px;
+    }
+    .bookingappointment .filter-area .left-side .single-drop{
+        width: 100%;
+    }
+    .bookingappointment .filter-area .apply-btn{
+        flex: auto;
+        width: 100%;
+    }
+    .bookingappointment .filter-area .apply-btn a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

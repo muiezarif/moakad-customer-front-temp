@@ -1,0 +1,26 @@
+{
+  "name": "wizard-nft",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^1.0.30",
+    "jquery": "^3.7.1",
+    "next": "^14.0.4",
+    "react": "^18",
+    "react-bootstrap": "^2.9.2",
+    "react-dom": "^18",
+    "react-owl-carousel": "^2.3.3",
+    "sass": "^1.69.7"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4"
+  }
+}

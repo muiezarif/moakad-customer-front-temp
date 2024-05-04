@@ -1,0 +1,207 @@
+.servicesmain {
+    padding-bottom: 16px;
+
+    .innerservices {
+        border-radius: 32px;
+        background: var(--Base-White, #FFF);
+        padding: 48px;
+        position: relative;
+
+        .servicearrowbtn {
+            border-radius: 50px;
+            background: #DEE6FF;
+            display: flex;
+            padding: 8px;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            position: absolute;
+            right: 48px;
+            top: 48px;
+
+            .innerbtn {
+                border-radius: 50px;
+                background: var(--Base-White, #FFF);
+                display: flex;
+                padding: 10px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .serviceshead {
+            color: var(--Base-Text, #12215C);
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 48px;
+            margin-bottom: 32px;
+        }
+
+        .servicesparas {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 120px;
+            margin-bottom: 64px;
+
+            .servicesparaleft {
+                color: var(--Grey-700, #7A7A96);
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+            }
+
+            .servicespararight {
+                color: var(--Grey-700, #7A7A96);
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+                padding-right: 30px;
+            }
+        }
+
+        .servicescardsmain {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 16px;
+
+            .servicecard {
+                border-radius: 32px;
+                background: var(--White-100, #F5F5FF);
+                display: flex;
+                padding-bottom: 24px;
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+                cursor: pointer;
+
+                .servicecardimg {
+                    height: 311px;
+                    border-radius: 32px;
+                    object-fit: cover;
+                    object-position: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    position: relative;
+
+                    .innerservicesimg {
+                        height: 100%;
+                        border-radius: 32px;
+                        object-fit: cover;
+                        object-position: center;
+                        width: 100%;
+                    }
+
+                    .servicebtn {
+                        position: absolute;
+                        color: var(--Base-Text, #12215C);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22px;
+                        border-radius: 50px;
+                        background: var(--White-300, #DEE6FF);
+                        display: flex;
+                        padding: 6px 14px;
+                        justify-content: center;
+                        align-items: center;
+                        border: none;
+                        outline: none;
+                        top: 20px;
+                        left: 16px;
+                    }
+
+                    .arrowbtn {
+                        position: absolute;
+                        border-radius: 50px;
+                        background: var(--Base-White, #FFF);
+                        display: flex;
+                        padding: 10px;
+                        align-items: flex-start;
+                        border: none;
+                        outline: none;
+                        top: 20px;
+                        right: 16px;
+                    }
+                }
+
+                .servicecardpara {
+                    color: var(--Base-Text, #12215C);
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 26px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .servicesmain .innerservices {
+        padding: 24px;
+    }
+
+    .servicesmain .innerservices .servicearrowbtn {
+        top: 24px;
+        right: 24px;
+    }
+
+    .servicesmain .innerservices .servicearrowbtn {
+        padding: 6px;
+    }
+
+    .servicesmain .innerservices .servicearrowbtn .innerbtn {
+        padding: 6px;
+    }
+
+    .servicesmain .innerservices .serviceshead {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .servicesmain .innerservices .servicesparas {
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 32px;
+    }
+
+    .servicesmain .innerservices .servicesparas .servicespararight {
+        padding-right: 0px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .servicesmain .innerservices .servicesparas .servicesparaleft {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .servicesmain .innerservices .servicescardsmain {
+        grid-template-columns: 1fr;
+    }
+
+    .servicesmain .innerservices .servicescardsmain .servicecard .servicecardimg {
+        height: 222px;
+    }
+
+    .servicesmain .innerservices .servicescardsmain .servicecard .servicecardpara {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .servicesmain .innerservices .servicescardsmain .servicecard {
+        gap: 16px;
+        padding-bottom: 16px;
+    }
+
+    .servicesmain .innerservices .servicescardsmain .servicecard .servicecardimg .arrowbtn {
+        padding: 8px;
+    }
+}

@@ -1,0 +1,135 @@
+.main-banner {
+    padding-top: 24px;
+    padding-bottom: 16px;
+
+    .innerbanner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+
+        .bannerleft {
+            border-radius: 32px;
+            background: #FFF;
+            display: flex;
+            padding: 48px 78px 70px 32px;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 40px;
+
+            .bannerhead {
+                color: var(--Base-Text, #12215C);
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
+
+                .boldhead {
+                    color: var(--Base-Text, #12215C);
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 140%;
+                }
+            }
+
+            .bannerbtns {
+                display: flex;
+                align-items: flex-start;
+                gap: 16px;
+                flex-wrap: wrap;
+
+                .innerbtn {
+                    border-radius: 200px;
+                    border: 1px solid var(--Grey-400, #B8B8C7);
+                    background: #FFF;
+                    display: flex;
+                    padding: 8px 24px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 16px;
+                    color: var(--Base-Text, #12215C);
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px;
+                    white-space: nowrap;
+                }
+            }
+
+            .bluebtn {
+                color: var(--Base-White, #FFF);
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px;
+                border-radius: 57px;
+                background: var(--Blue-Base, #2652FF);
+                display: flex;
+                padding: 16px 24px;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                border: none;
+                margin-top: 32px;
+            }
+        }
+
+        .bannerright{
+            width: 100%;
+            height: 100%;
+            .innerbannerimg{
+                border-radius: 32px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width:1024px){
+    .main-banner{
+        padding-top: 32px;
+    }
+    .main-banner .innerbanner{
+        grid-template-columns: 1fr;
+    }
+    .main-banner .innerbanner .bannerleft .bannerhead{
+        font-size: 20px;
+    }
+    .main-banner .innerbanner .bannerleft .bannerhead .boldhead{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .main-banner .innerbanner .bannerleft{
+        padding: 24px;
+    }
+    .main-banner .innerbanner .bannerleft .bannerbtns .innerbtn{
+        padding: 8px 16px;
+        gap: 8px;
+        font-size: 16px;
+    }
+    .main-banner .innerbanner .bannerleft .bannerbtns{
+        gap: 8px;
+    }
+    .main-banner .innerbanner .bannerleft .bluebtn{
+        font-size: 16px;
+        margin-top: 0px;
+    }
+    .main-banner .innerbanner .bannerleft .bannerbtns{
+        .btnone{
+            order: 1;
+        }
+        .btntwo{
+            order: 2;
+        }
+        .btnthree{
+            order: 5;
+        }
+        .btnfour{
+            order: 4;
+        }
+        .btnfive{
+            order: 3;
+        }
+    }
+}
